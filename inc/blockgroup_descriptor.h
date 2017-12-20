@@ -41,36 +41,36 @@
 // Note that sizeof(os_blockgroup_descriptor_t) == 32 bytes.
 
 struct os_blockgroup_descriptor_t {
-  // the 32-bit block ID of the first block of the "block bitmap"
-  // for the blockgroup this descriptor represents.
-  os_uint32_t bg_block_bitmap;
+    // the 32-bit block ID of the first block of the "block bitmap"
+    // for the blockgroup this descriptor represents.
+    os_uint32_t bg_block_bitmap;
 
-  // the 32-bit block ID of the first block of the "inode bitmap"
-  // for the blockgroup this descriptor represents.
-  os_uint32_t bg_inode_bitmap;
+    // the 32-bit block ID of the first block of the "inode bitmap"
+    // for the blockgroup this descriptor represents.
+    os_uint32_t bg_inode_bitmap;
 
-  // the 32-bit block ID of the first block of the "inode table"
-  // for the blockgroup this descriptor represents.
-  os_uint32_t bg_inode_table;
+    // the 32-bit block ID of the first block of the "inode table"
+    // for the blockgroup this descriptor represents.
+    os_uint32_t bg_inode_table;
 
-  // the 16bit value indicating the total number of free blocks
-  // in the blockgroup this descriptor represents.
-  os_uint16_t bg_free_blocks_count;
+    // the 16bit value indicating the total number of free blocks
+    // in the blockgroup this descriptor represents.
+    os_uint16_t bg_free_blocks_count;
 
-  // the 16bit value indicating the total number of free inodes
-  // in the blockgroup this descriptor represents.
-  os_uint16_t bg_free_inodes_count;
+    // the 16bit value indicating the total number of free inodes
+    // in the blockgroup this descriptor represents.
+    os_uint16_t bg_free_inodes_count;
 
-  // the 16bit value indicating the number of inodes that have
-  // been allocated to directories in the blockgroup this descriptor
-  // represents.
-  os_uint16_t bg_used_dirs_count;
+    // the 16bit value indicating the number of inodes that have
+    // been allocated to directories in the blockgroup this descriptor
+    // represents.
+    os_uint16_t bg_used_dirs_count;
 
-  // a 16-bit pad value so the structure is 32-bit aligned.
-  os_uint16_t bg_pad;
+    // a 16-bit pad value so the structure is 32-bit aligned.
+    os_uint16_t bg_pad;
 
-  // 12 bytes of space reserved for future revisions.
-  os_uint8_t bg_reserved[12];
+    // 12 bytes of space reserved for future revisions.
+    os_uint8_t bg_reserved[12];
 };
 
 #endif // EXT2READER_INC_BLOCKGROUP_DESCRIPTOR_TABLE_H
