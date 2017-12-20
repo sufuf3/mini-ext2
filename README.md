@@ -1,4 +1,4 @@
-# ext-parser
+# mini-ext2
 
 Navigating the ext-fs data-structures.
 This project rewritten based on TheCodeArtist's [ext2-parser](https://github.com/TheCodeArtist/ext2-parser/tree/b42065a07d8b06894f3cf88139a8d7808cd791d0). Thanks to the awesome [ext2-parser](https://github.com/TheCodeArtist/ext2-parser)!
